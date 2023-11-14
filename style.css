@@ -13,7 +13,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -48,14 +47,12 @@ section{
 .heading{
     text-align: center;
     color:#000000;
-    text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
 
 .heading span{
     color:var(--main-color);
-    text-transform: uppercase;
 }
 
 .btn{
@@ -136,7 +133,7 @@ section{
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color:var(--white);
+    color:black;
     padding:1rem;
     text-transform: none;
 }
@@ -145,13 +142,21 @@ section{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color:var(--white);
+    color:black;
 }
 
 .header .search-form label:hover{
     color:var(--main-color);
 }
 
+.portada-info{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url("carreras.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 
 .home{
@@ -170,8 +175,7 @@ section{
 
 .home .content h3{
     font-size: 6.2rem;
-    text-transform:uppercase;
-    text-shadow: 5px 10px  #005d2c;
+    text-shadow: 5px 9px  #005d2c;
     color:#fff;
    
 }
@@ -185,6 +189,21 @@ section{
     background-color: rgba(2, 82, 35, 0.322);
     
 }
+.info p{
+    font-size: 1.6rem;
+    text-transform:initial;
+    line-height: 1.5;
+    padding:1rem ;
+}
+
+.info h1{
+    
+    padding:1rem;
+    font-size: 2rem;
+    color:#000000;
+    
+}
+
 
 .about .row{
     display: flex;
@@ -309,7 +328,6 @@ section{
 }
 
 .contact .row form h3{
-    text-transform: uppercase;
     font-size: 3.5rem;
     color: #000000;
 }
@@ -485,7 +503,7 @@ section{
     .header .navbar{
         position: absolute;
         top:100%; right: -100%;
-        background: #fff;
+        background: #ffffff;
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
@@ -495,7 +513,7 @@ section{
     }
 
     .header .navbar a{
-        color:var(--white);
+        color:black;
         display: block;
         margin:1.5rem;
         padding:.5rem;
